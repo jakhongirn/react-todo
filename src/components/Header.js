@@ -1,13 +1,14 @@
-import classes from './Header.module.css'
+import Button from './Button'
 
-function Header() {
-    return ( 
-        <div >
-            <h1>To do List</h1>
 
-            <button className={classes.btn}>Add</button>
-        </div>
-     );
+const Header = (props) => {
+  return (
+    <header className='header'>
+        <h1>To do list</h1>
+        <Button />
+    </header>
+  )
 }
 
-export default Header;
+
+export default Header
